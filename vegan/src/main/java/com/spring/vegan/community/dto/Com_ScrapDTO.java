@@ -4,12 +4,13 @@ import java.sql.Date;
 
 import org.springframework.stereotype.Component;
 
+// 게시글 스크랩 dto
 @Component("com_scrapDTO")
 public class Com_ScrapDTO {
-	private String u_email;
-	private int c_articleNo;
-	private Date com_scrap_date;
-	private String show;
+	private String u_email; // 이메일 유저테이블의 fk
+	private int c_articleNo; // 글번호 게시글테이블의 fk
+	private Date com_scrap_date; // 스크랩일자
+	private String show; // 게시여부
 	
 	public String getU_email() {
 		return u_email;

@@ -4,12 +4,13 @@ import java.sql.Date;
 
 import org.springframework.stereotype.Component;
 
+// 문의이미지 dto
 @Component("iq_imageDTO")
 public class Iq_ImageDTO {
-	private int iq_imageNo;
-	private String iq_image;
-	private Date regDate;
-	private int iq_no;
+	private int iq_imageNo; // 이미지번호pk
+	private String iq_image; // 이름
+	private Date regDate; // 일자
+	private int iq_no; // 문의글번호 문의글테이블 fk
 	public int getIq_imageNo() {
 		return iq_imageNo;
 	}

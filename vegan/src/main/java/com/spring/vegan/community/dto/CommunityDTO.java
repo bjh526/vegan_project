@@ -4,20 +4,21 @@ import java.sql.Date;
 
 import org.springframework.stereotype.Component;
 
+// 커뮤니티 게시글 dto
 @Component("communityDTO")
 public class CommunityDTO {
-	private int c_articleNo;
-	private String c_category;
-	private String u_email;
-	private String c_title;
-	private Date c_writeDate;
-	private String c_content;
-	private String c_image;
-	private int c_views;
-	private int c_scraps;
-	private String c_show;
-	private int heart;
-	private int reply_cnt;
+	private int c_articleNo; // 글번호 pk
+	private String c_category; // 카테고리
+	private String u_email; // 이메일 유저테이블의 fk
+	private String c_title; // 제목
+	private Date c_writeDate; // 작성일
+	private String c_content; // 내용
+	private String c_image; // 이미지파일명
+	private int c_views; // 조회수
+	private int c_scraps; // 스크랩수
+	private String c_show; // 게시여부 
+	private int heart; // 하트수
+	private int reply_cnt; // 댓글수
 	
 	public int getReply_cnt() {
 		return reply_cnt;
@@ -31,8 +32,8 @@ public class CommunityDTO {
 	public void setHeart(int heart) {
 		this.heart = heart;
 	}
-	private String search_type;
-	private String keyword;
+	private String search_type; // 검색 정렬방식
+	private String keyword; // 검색 키워드
 	
 	
 	public String getSearch_type() {

@@ -4,12 +4,13 @@ import java.sql.Date;
 
 import org.springframework.stereotype.Component;
 
+// 게시글 이미지 dto
 @Component("c_imageDTO")
 public class C_ImageDTO {
-	private int c_imageNo;
-	private String c_image;
-	private Date regDate;
-	private int c_articleNo;
+	private int c_imageNo; // pk 이미지번호
+	private String c_image; // 이미지이름
+	private Date regDate; // 이미지등록일자
+	private int c_articleNo; // 게시글번호 게시글테이블fk
 	public int getC_imageNo() {
 		return c_imageNo;
 	}

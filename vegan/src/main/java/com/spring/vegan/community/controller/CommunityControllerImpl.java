@@ -52,6 +52,7 @@ public class CommunityControllerImpl implements CommunityController{
 	@Autowired
 	private CommunityService communityService;
 	
+	// 이미지 업로드 경로
 	private static final String VEGI_UPLOAD = "C:\\vegi_upload";
 	private static final String INQUERY_UPLOAD = "C:\\inquery_upload";
 	private static final String EVENT_UPLOAD = "C:\\event_upload";

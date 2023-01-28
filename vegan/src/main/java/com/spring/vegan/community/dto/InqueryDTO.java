@@ -4,18 +4,19 @@ import java.sql.Date;
 
 import org.springframework.stereotype.Component;
 
+// 문의글 dto
 @Component("inqueryDTO")
 public class InqueryDTO {
-	private int iq_no;
-	private String u_email;
-	private String iq_title;
-	private Date iq_writeDate;
-	private String iq_content;
-	private String iq_image;
-	private String iq_thumb;
+	private int iq_no; // 문의글 번호 pk
+	private String u_email; // 이메일 유저테이블 fk
+	private String iq_title; // 제목
+	private Date iq_writeDate; // 작성일자
+	private String iq_content; // 내용
+	private String iq_image; // 문의 이미지
+	private String iq_thumb; // 이미지 썸네일
 	
-	private String search_type;
-	private String keyword;
+	private String search_type; // 검색 정렬방식
+	private String keyword; // 검색 키워드 
 	
 	public String getSearch_type() {
 		return search_type;
